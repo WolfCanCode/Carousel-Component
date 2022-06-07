@@ -33,9 +33,9 @@ export const Card = ({
     >
       <div className={'w-full rounded-3xl sm:rounded-2xl'}>
         <img alt={title} src={cover} className={'object-cover w-full'} />
-      </div>{' '}
+      </div>
       <div
-        className={`w-full mt-[length:36px] sm:mt-[length:48px] font-normal text-black text-base leading-[length:24px] sm:text-2xl sm:leading-[length:32px] space-x-[length:-0.015em]  transition-all duration-200 ease-in-out ${
+        className={`w-full mt-[length:36px] sm:mt-[length:48px] sm:font-light sm:font-normal text-black text-base leading-[length:24px] sm:text-2xl sm:leading-[length:32px] space-x-[length:-0.015em]  transition-all duration-200 ease-in-out ${
           showInfo ? 'opacity-100' : 'opacity-0 duration-400'
         }`}
       >
