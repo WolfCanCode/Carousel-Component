@@ -2,10 +2,14 @@
 import { CardSlider } from './CardSlider';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import React from 'react';
+import { Card } from './components/Card';
 
 export default {
   title: 'Component/CardSlider',
   component: CardSlider,
+  subcomponents: {
+    Card: Card,
+  },
   argTypes: {
     title: {
       control: 'text',
@@ -14,6 +18,7 @@ export default {
     },
     data: {
       control: 'object',
+      description: 'This is the data of the card slider',
       defaultValue: [
         {
           cover: 'https://source.unsplash.com/random/100x100',
@@ -50,7 +55,9 @@ export default {
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 const Template: ComponentStory<typeof CardSlider> = (args) => (
-  <CardSlider {...args} />
+  <div className={'p-6'}>
+    <CardSlider {...args} />
+  </div>
 );
 
-export const Primary = Template.bind({});
+export const Current = Template.bind({});

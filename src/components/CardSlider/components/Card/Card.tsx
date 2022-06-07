@@ -1,12 +1,12 @@
 import React, { useEffect, useRef } from 'react';
 
 export interface CardProps {
-  cover?: string;
-  title?: string;
+  cover: string;
+  title: string;
   description: string;
-  subDescription?: string;
+  subDescription: string;
   active: boolean;
-  showInfo?: boolean;
+  showInfo: boolean;
 }
 export const Card = ({
   active,
